@@ -52,7 +52,7 @@
 		(filling no)
 		(grid_origin 85.428333 125.969023)
 		(pcbplotparams
-			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(layerselection 0x00000000_00000000_55555555_5755f55f)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
@@ -78,14 +78,14 @@
 			(sketchpadsonfab no)
 			(plotpadnumbers no)
 			(hidednponfab no)
-			(sketchdnponfab yes)
-			(crossoutdnponfab yes)
+			(sketchdnponfab no)
+			(crossoutdnponfab no)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "prodnew/")
 		)
 	)
 	(footprint "LED_THT:LED_D5.0mm"
@@ -772,7 +772,7 @@
 		(property "Reference" "SW1"
 			(at 3.25 -2 0)
 			(layer "F.SilkS")
-			(uuid "90303954-461c-4434-a0f4-4451b8bf2450")
+			(uuid "c2afc38a-cc3a-4651-a319-a1e34e068127")
 			(effects
 				(font
 					(size 1 1)
@@ -783,7 +783,7 @@
 		(property "Value" "SW_Push"
 			(at 3.75 6.7 0)
 			(layer "F.Fab")
-			(uuid "ed3d95a3-736a-4b50-addb-28a102b337db")
+			(uuid "fcd0983a-fb7b-4a6d-828f-faaa495569df")
 			(effects
 				(font
 					(size 1 1)
@@ -796,7 +796,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "65439ae5-f409-418a-aa50-1b065ec5ccbe")
+			(uuid "d7aaf57b-d45d-435d-bf2e-454cbcc4d1cf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -809,7 +809,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "141f39db-2e3b-44a0-8ded-4f0b3e251149")
+			(uuid "e47f5ef5-9713-48b7-b6b5-946c768e38e1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3891,7 +3891,7 @@
 		(descr "CR2032 battery holder https://www.lcsc.com/datasheet/lcsc_datasheet_2203021630_MYOUNG-BS-07-A1BJ001_C2979167.pdf")
 		(tags "CR2032 BR2032 BatteryHolder Battery")
 		(property "Reference" "BT1"
-			(at -1.5 4.2 325)
+			(at -0.594191 4.102796 325)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "68b9c7ff-16df-480c-85d3-a29d7b6df0f1")
