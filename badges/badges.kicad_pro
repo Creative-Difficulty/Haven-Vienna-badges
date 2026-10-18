@@ -644,19 +644,14 @@
     "top_level_sheets": [
       {
         "filename": "badges.kicad_sch",
-        "name": "Root",
-        "uuid": "e9a0512f-ad70-4c27-a84a-36f6927053a7"
+        "name": "badges",
+        "uuid": "00000000-0000-0000-0000-000000000000"
       }
     ],
-    "used_designators": "U1,#PWR1-12,BT1-4,D1-12,SW1-2,C1,R1-8",
+    "used_designators": "",
     "variants": []
   },
-  "sheets": [
-    [
-      "e9a0512f-ad70-4c27-a84a-36f6927053a7",
-      "Root"
-    ]
-  ],
+  "sheets": [],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {
