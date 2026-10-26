@@ -1,34 +1,22 @@
 # CLAUDE.md — Haven Vienna badges
 
-This session's job is **finding suppliers for the parts**. Read footprints, values, hole sizes and pitches from the KiCad files (`badges/badges.kicad_pcb`, `badges/badges.kicad_sch`). Don't take them from this file.
+The supplier search is done; the order list is in `SUPPLIERS.md`. Read footprints, values, hole sizes and pitches from the KiCad files (`badges/badges.kicad_pcb`, `badges/badges.kicad_sch`). Don't take them from this file.
 
 ## Constraints
 
-- **55 badges**, plus a few spares. Ship to **Austria**.
-- **Budget: ≤ €0.80 per badge for all parts excluding shipping**, plus **€45 total shipping** for all parts.
-- The **55 CR2032 cells are already bought**, so they're not part of the €0.80. The battery holder still needs buying.
-- **The PCB is already ordered.** Parts must fit the existing footprints, and footprints can't change.
+- **75 badges**, plus a few spares. Ship to **Austria**. The event is on **14 Nov 2026**.
+- **Budget: €100 total for all parts, including shipping and VAT.**
+- The CR2032 cells are handled separately and aren't part of the budget. The battery holder is.
+- **The PCB is already ordered** (at least 75 boards). Parts must fit the existing footprints, and footprints can't change.
+- SW1 is a momentary button on purpose: the badge blinks only while it's held.
 
 ## Decisions that aren't in the KiCad files
 
 - **U1 must be a CMOS 555, not the LM555 in the schematic.** The supply is a single 3 V CR2032 (the net name `+6V` is misleading). A bipolar 555 needs ≥ 4.5 V and its output can't light the high-side LEDs. It must be DIP-8.
-  - **Cheap pick:** XINLUDA **XD7555** (an ICM7555 clone, 2–18 V).
-  - **Also fine:** TLC555CP, ICM7555IPA, LMC555CN.
-- **LEDs:** **red or yellow** 5 mm. Blue and white (forward voltage about 3 V) barely light from 3 V.
-- **Optional timing values:** R1 = 100k, R2 = 10k, C1 = 10 µF instead of 10k / 1k / 100 µF. Same blink rate, less wasted battery. Either set is acceptable; choose by price.
+  - **Chosen:** XINLUDA **XD551** (a TLC555 clone, 2–15 V). Its output can source about 2.5× more current than 7555-type parts, which D4–D6 need.
+  - ICM7555-type parts (XD7555) work, but at 3 V they source too little current and D4–D6 end up dim.
+- **LEDs:** **red** 5 mm. Yellow has less headroom from 3 V. Blue and white (forward voltage about 3 V) barely light.
+- **R3–R5 = 680 Ω and R6–R8 = 100 Ω, not 270 Ω** (decided 2026-10-26). The CMOS output pulls low much harder than it drives high. With these values all six LEDs run at about 1.3 mA and look evenly bright.
+- **Timing stays 10k / 1k / 100 µF.** The 100k / 10k / 10 µF alternative only saves battery, and that doesn't matter with a momentary switch.
+- **C1's footprint is non-polar and has no "+" mark.** The electrolytic's + lead goes in pad 1 (connected to U1 pins 2 and 6), and the − lead goes in pad 2 (GND).
 - **Avoid eBay/AliExpress "TLC555" or "7555" lots.** They're often relabelled bipolar NE555s that fail at 3 V.
-
-## Research so far (LCSC, USD, snapshot 2026-10-18 — re-check)
-
-The plan was a single LCSC order. EU VAT is charged at checkout, and shipping to Austria was roughly $10–25. The estimate was about $0.65 per badge.
-
-| Part | LCSC | Seen | Note |
-|---|---|---|---|
-| XD7555, DIP-8 | C521188 | 50+ $0.1375 | only ~80 in stock |
-| MYOUNG BS-07-A1BJ001, CR2032 holder | C2979167 | 50+ $0.304 | the footprint is made for this exact part; biggest cost item |
-| 6×6 mm THT tactile switch | C2888886 | 50+ ~$0.013 | |
-| 5 mm red LED | C87271 (one candidate) | "from $0.0192" at volume | small-quantity price not verified |
-| Resistors, 1/4 W axial | — | — | not chosen yet |
-| Electrolytic capacitor | — | — | not chosen yet; must match the footprint's lead spacing |
-
-**Rejected as too expensive:** genuine TI TLC555CP from Reichelt.at (€1.00), Bürklin (€0.57 net + €8.30 shipping) and Mouser (~€0.73). LCSC C910886 was out of stock.
