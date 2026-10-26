@@ -1,6 +1,6 @@
 # CLAUDE.md — Haven Vienna badges
 
-The supplier search is done; the order list is in `SUPPLIERS.md`. Read footprints, values, hole sizes and pitches from the KiCad files (`badges/badges.kicad_pcb`, `badges/badges.kicad_sch`). Don't take them from this file.
+The supplier search is done; the order list is in `SUPPLIERS.md` (LCSC, within budget). `ALTERNATIVE-SUPPLIERS.md` is an EU-only fallback (Pollin and Reichelt), which comes to about €195. Read footprints, values, hole sizes and pitches from the KiCad files (`badges/badges.kicad_pcb`, `badges/badges.kicad_sch`). Don't take them from this file.
 
 ## Constraints
 
