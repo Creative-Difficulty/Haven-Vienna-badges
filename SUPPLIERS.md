@@ -44,9 +44,9 @@ The tree trio (green, orange, white) and the flower trio (red, orange, red) blin
 | R1 | 100 kΩ, ¼ W carbon film (UNI-ROYAL CFR0W4J0104A50) | [C61303](https://www.lcsc.com/product-detail/C61303.html) | 100 | $0.0125 | $1.25 |
 | R2 | 10 kΩ, ¼ W carbon film (UNI-ROYAL CFR0W4J0103A50) | [C61299](https://www.lcsc.com/product-detail/C61299.html) | 100 | $0.0123 | $1.23 |
 | C1 | 10 µF 50 V electrolytic, 5×7 mm, 2.0 mm pitch (Huawei KS1H100MC070A00CV0) | [C216326](https://www.lcsc.com/product-detail/C216326.html) | 80 | $0.0304 | $2.43 |
-| (R5 tuning) | 2.7 kΩ, ¼ W metal film (UNI-ROYAL MFR0W4F2701A50) | [C58615](https://www.lcsc.com/product-detail/C58615.html) | 50 | $0.0135 | $0.68 |
-| (R5 tuning) | 5.6 kΩ, ¼ W carbon film (UNI-ROYAL CFR0W4J0562A50) | [C70764](https://www.lcsc.com/product-detail/C70764.html) | 50 | $0.0087 | $0.43 |
-| | | | | **Parts** | **$65.86** |
+| (R5 tuning) | 2.7 kΩ, ¼ W metal film (UNI-ROYAL MFR0W4F2701A50) | [C58615](https://www.lcsc.com/product-detail/C58615.html) | 100 | $0.0135 | $1.35 |
+| (R5 tuning) | 5.6 kΩ, ¼ W carbon film (UNI-ROYAL CFR0W4J0562A50) | [C70764](https://www.lcsc.com/product-detail/C70764.html) | 100 | $0.0087 | $0.87 |
+| | | | | **Parts** | **$66.97** |
 
 Quantities are rounded up to LCSC's order steps. For red and orange, 200 costs less than 160 because of the price break at 200. The parts weigh about 0.65 kg.
 
@@ -58,11 +58,11 @@ LCSC charges the 20 % Austrian VAT at checkout, on parts and shipping together. 
 
 | Shipping | Total incl. VAT | In EUR | Per badge |
 |---|---|---|---|
-| $10 | $91.03 | €81 | €1.08 |
-| $25 | $109.03 | €97 | €1.29 |
-| $35 | $121.03 | €108 | €1.44 |
+| $10 | $92.36 | €82 | €1.10 |
+| $25 | $110.36 | €98 | €1.31 |
+| $35 | $122.36 | €109 | €1.45 |
 
-**The order stays under €100 only if shipping is under about $28.** With the all-red LEDs it was $35; the extra colours add about $8. If checkout shows more, drop the two tuning resistors ($1.11) and order 75 holders and 555s instead of 80 (about $2.20 less).
+**The order stays under €100 only if shipping is under about $26.** With the all-red LEDs it was $35; the extra colours add about $8. If checkout shows more, drop the two tuning resistors ($2.22) and order 75 holders and 555s instead of 80 (about $2.20 less).
 
 **Shipping has to be express (DHL, UPS or FedEx).** The event is on 14 Nov. "Global Standard Direct Line" is cheaper, but it takes 1–3 weeks, which is too slow. Order this week.
 
