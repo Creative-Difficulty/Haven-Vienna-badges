@@ -1,0 +1,18 @@
+LCSC Part Number,Quantity,Manufacturer Part Number,Manufacturer,Customer Part Number,Description
+C707092,80,XD551,XINLUDA,U1,"CMOS 555 timer (TLC555 clone), DIP-8"
+C2979167,80,BS-07-A1BJ001,MYOUNG,BT1,CR2032 battery holder
+C2837515,100,KH-6X6X5H-TJ,Kinghelm,SW1,6x6x5 mm tactile switch
+C52034652,100,5A2YGUC,Guiguang,D1,"5 mm LED lime green 570 nm, clear lens"
+C52034656,200,5A2OUD,Guiguang,"D2, D5","5 mm LED orange 605 nm, orange lens"
+C52034716,100,5A2WUC,Guiguang,D3,"5 mm LED white, clear lens"
+C52034660,200,5A2RUD,Guiguang,"D4, D6","5 mm LED red 625 nm, red lens"
+C70814,100,CFR0W4J0151A50,UNI-ROYAL,R3,"150 Ohm 1/4 W carbon film"
+C70791,100,CFR0W4J0561A50,UNI-ROYAL,R4,"560 Ohm 1/4 W carbon film"
+C58654,100,MFR0W4F3901A50,UNI-ROYAL,R5,"3.9 kOhm 1/4 W metal film"
+C61287,200,CFR0W4J0101A50,UNI-ROYAL,"R6, R8","100 Ohm 1/4 W carbon film"
+C70820,100,CFR0W4J0820A50,UNI-ROYAL,R7,"82 Ohm 1/4 W carbon film"
+C61303,100,CFR0W4J0104A50,UNI-ROYAL,R1,"100 kOhm 1/4 W carbon film"
+C61299,100,CFR0W4J0103A50,UNI-ROYAL,R2,"10 kOhm 1/4 W carbon film"
+C216326,80,KS1H100MC070A00CV0,Huawei,C1,"10 uF 50 V electrolytic, 5x7 mm, 2.0 mm pitch"
+C58615,100,MFR0W4F2701A50,UNI-ROYAL,R5 tuning,"2.7 kOhm 1/4 W metal film"
+C70764,100,CFR0W4J0562A50,UNI-ROYAL,R5 tuning,"5.6 kOhm 1/4 W carbon film"
